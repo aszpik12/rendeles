@@ -48,13 +48,17 @@ public class Rendeles extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        RendelesPasztal = new javax.swing.JTextField();
-        RendelesKasztal = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        RendelesSasztal = new javax.swing.JTextField();
-        RendelesZasztal = new javax.swing.JTextField();
         Rendelesfelvesz = new javax.swing.JButton();
         Rendelestorol = new javax.swing.JButton();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        RendelesSasztal = new javax.swing.JTextArea();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        RendelesKasztal = new javax.swing.JTextArea();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        RendelesZasztal = new javax.swing.JTextArea();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        RendelesPasztal = new javax.swing.JTextArea();
         jPanel5 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
@@ -173,7 +177,7 @@ public class Rendeles extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addComponent(Rendelestipus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Rendelések"));
@@ -184,15 +188,7 @@ public class Rendeles extends javax.swing.JFrame {
 
         jLabel2.setText("Sárga asztal");
 
-        RendelesPasztal.setEditable(false);
-
-        RendelesKasztal.setEditable(false);
-
         jLabel3.setText("Kék asztal");
-
-        RendelesSasztal.setEditable(false);
-
-        RendelesZasztal.setEditable(false);
 
         Rendelesfelvesz.setText("Felvesz");
         Rendelesfelvesz.addActionListener(new java.awt.event.ActionListener() {
@@ -203,6 +199,22 @@ public class Rendeles extends javax.swing.JFrame {
 
         Rendelestorol.setText("Törlés");
 
+        RendelesSasztal.setColumns(20);
+        RendelesSasztal.setRows(5);
+        jScrollPane7.setViewportView(RendelesSasztal);
+
+        RendelesKasztal.setColumns(20);
+        RendelesKasztal.setRows(5);
+        jScrollPane8.setViewportView(RendelesKasztal);
+
+        RendelesZasztal.setColumns(20);
+        RendelesZasztal.setRows(5);
+        jScrollPane9.setViewportView(RendelesZasztal);
+
+        RendelesPasztal.setColumns(20);
+        RendelesPasztal.setRows(5);
+        jScrollPane10.setViewportView(RendelesPasztal);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -211,29 +223,34 @@ public class Rendeles extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(RendelesZasztal, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1))
-                                .addGap(36, 36, 36)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(RendelesSasztal, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(RendelesKasztal, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(RendelesPasztal, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(45, 45, 45)
+                        .addComponent(jLabel1)
+                        .addGap(159, 159, 159)
+                        .addComponent(jLabel2)
+                        .addContainerGap(81, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(Rendelesfelvesz)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Rendelestorol)))
-                .addContainerGap())
+                        .addComponent(Rendelestorol)
+                        .addContainerGap())))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(76, 76, 76))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(43, 43, 43))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,19 +259,19 @@ public class Rendeles extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
-                .addGap(2, 2, 2)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(RendelesZasztal, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RendelesSasztal, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addGap(6, 6, 6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(RendelesPasztal, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RendelesKasztal, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Rendelesfelvesz)
                     .addComponent(Rendelestorol))
@@ -270,7 +287,7 @@ public class Rendeles extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(61, 61, 61)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -366,7 +383,7 @@ public class Rendeles extends javax.swing.JFrame {
                                 .addComponent(jLabel10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(etelfelvesztipus, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -439,22 +456,27 @@ public class Rendeles extends javax.swing.JFrame {
 
     private void etelfelveszActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_etelfelveszActionPerformed
         DefaultListModel dlm = new DefaultListModel();
+        DefaultListModel dlmarnelkul = new DefaultListModel();
         String etel = etelfelvesznev.getText() + "    " + etelfelveszar.getText();
+        String etelarnelkul = etelfelvesznev.getText();
         switch (etelfelvesztipus.getSelectedIndex()) {
             case 0:
             dlm.addElement(etel);
+            dlmarnelkul.addElement(etelarnelkul);
             etelfelveszeloetel.setModel(dlm);
-            Rendeleseloetel.setModel(dlm);
+            Rendeleseloetel.setModel(dlmarnelkul);
                 break;
             case 1:
             dlm.addElement(etel);
+            dlmarnelkul.addElement(etelarnelkul);
             etelfelveszfoetel.setModel(dlm);
-            Rendelesfoetel.setModel(dlm);
+            Rendelesfoetel.setModel(dlmarnelkul);
                 break;
             case 2:
             dlm.addElement(etel);
+            dlmarnelkul.addElement(etelarnelkul);
             etelfelveszdesszert.setModel(dlm);
-            Rendelesdesszert.setModel(dlm);
+            Rendelesdesszert.setModel(dlmarnelkul);
                 break;
             default:
                 throw new AssertionError();
@@ -538,10 +560,10 @@ public class Rendeles extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField RendelesKasztal;
-    private javax.swing.JTextField RendelesPasztal;
-    private javax.swing.JTextField RendelesSasztal;
-    private javax.swing.JTextField RendelesZasztal;
+    private javax.swing.JTextArea RendelesKasztal;
+    private javax.swing.JTextArea RendelesPasztal;
+    private javax.swing.JTextArea RendelesSasztal;
+    private javax.swing.JTextArea RendelesZasztal;
     private javax.swing.JList<String> Rendelesdesszert;
     private javax.swing.JList<String> Rendeleseloetel;
     private javax.swing.JButton Rendelesfelvesz;
@@ -576,11 +598,15 @@ public class Rendeles extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 
