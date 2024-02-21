@@ -199,18 +199,22 @@ public class Rendeles extends javax.swing.JFrame {
 
         Rendelestorol.setText("Törlés");
 
+        RendelesSasztal.setEditable(false);
         RendelesSasztal.setColumns(20);
         RendelesSasztal.setRows(5);
         jScrollPane7.setViewportView(RendelesSasztal);
 
+        RendelesKasztal.setEditable(false);
         RendelesKasztal.setColumns(20);
         RendelesKasztal.setRows(5);
         jScrollPane8.setViewportView(RendelesKasztal);
 
+        RendelesZasztal.setEditable(false);
         RendelesZasztal.setColumns(20);
         RendelesZasztal.setRows(5);
         jScrollPane9.setViewportView(RendelesZasztal);
 
+        RendelesPasztal.setEditable(false);
         RendelesPasztal.setColumns(20);
         RendelesPasztal.setRows(5);
         jScrollPane10.setViewportView(RendelesPasztal);

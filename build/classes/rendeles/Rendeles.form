@@ -424,6 +424,7 @@
                   <SubComponents>
                     <Component class="javax.swing.JTextArea" name="RendelesSasztal">
                       <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
                       </Properties>
@@ -439,6 +440,7 @@
                   <SubComponents>
                     <Component class="javax.swing.JTextArea" name="RendelesKasztal">
                       <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
                       </Properties>
@@ -454,6 +456,7 @@
                   <SubComponents>
                     <Component class="javax.swing.JTextArea" name="RendelesZasztal">
                       <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
                       </Properties>
@@ -469,6 +472,7 @@
                   <SubComponents>
                     <Component class="javax.swing.JTextArea" name="RendelesPasztal">
                       <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="rows" type="int" value="5"/>
                       </Properties>
