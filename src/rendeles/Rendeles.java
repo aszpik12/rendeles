@@ -4,6 +4,11 @@
  */
 package rendeles;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.DefaultListModel;
@@ -699,6 +704,8 @@ public class Rendeles extends javax.swing.JFrame {
             default:
                 throw new AssertionError();
         }
+
+        
     }//GEN-LAST:event_etelfelveszActionPerformed
 
     private void RendelesfelveszActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RendelesfelveszActionPerformed
@@ -711,26 +718,40 @@ public class Rendeles extends javax.swing.JFrame {
         switch (Rendelestipus.getSelectedIndex()) {
             case 0:
             etel = etelekasztalrakiiras(i, etelek, etel);
-                RendelesZasztal.setText(etel.toString());
+                RendelesZasztal.setText(etel);
                 
                 break;
             case 1:
                 etel = etelekasztalrakiiras(i, etelek, etel);
-                RendelesSasztal.setText(etel.toString());
+                RendelesSasztal.setText(etel);
                 
                 break;
             case 2:
                 etel = etelekasztalrakiiras(i, etelek, etel);
-                RendelesKasztal.setText(etel.toString());
+                RendelesKasztal.setText(etel);
                 
                 break;
             case 3:
                 etel = etelekasztalrakiiras(i, etelek, etel);
-                RendelesPasztal.setText(etel.toString());
+                RendelesPasztal.setText(etel);
                 
                 break;
             default:
                 throw new AssertionError();
+        }
+        
+    Path path
+            = Paths.get("C:\\Users\\petrovai.a.ors\\Documents\\NetBeansProjects\\rendeles");
+ 
+        String str
+            = etel;
+ 
+        try {
+            Files.writeString(path, str,
+                              StandardCharsets.UTF_8);
+        }
+        catch (IOException ex) {
+            System.out.print("Invalid Path");
         }
     }//GEN-LAST:event_RendelesfelveszActionPerformed
 
